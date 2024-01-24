@@ -1,0 +1,54 @@
+.quality{
+    .row{
+        .quality-content{
+            h2{
+                font-size: 55px;
+                color: $font-co;
+            }
+            p{
+                color: $tag;
+                line-height: 1.8;
+            }
+            .btn{
+                button{
+                    padding: 15px 50px;
+                    font-size: 14px;
+                    background-color: $hover;
+                    color: $white;
+                    border: none;
+                    margin-top: 20px;
+                }
+            }
+            padding-top: 50px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+    padding: 50px 0;
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: '';
+        background-image: url(../images/leaves-1-2.png);
+        background-size: cover;
+        top: 0;
+        right: 0;
+        width: 285px;
+        height: 350px;
+        z-index: 10;
+    }
+
+    &::before{
+        position: absolute;
+        content: '';
+        background-image: url(../images/leaves-1-1.png);
+        background-size: cover;
+        bottom: 0;
+        left: 0;
+        width: 285px;
+        height: 420px;
+        z-index: 10;
+    }
+}
